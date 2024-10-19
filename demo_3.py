@@ -147,7 +147,7 @@ print(f'Number of classes: {dataset.num_classes}')
 
 # Load target data for regression
 df = pd.read_csv('wikipedia/chameleon/musae_chameleon_target.csv')
-values = np.log10(df['target'])
+values = np.log10(df['mục tiêu'])
 data.y = torch.tensor(values)
 
 # Visualize target distribution
