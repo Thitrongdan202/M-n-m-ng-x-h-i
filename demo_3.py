@@ -151,7 +151,7 @@ values = np.log10(df['target'])
 data.y = torch.tensor(values)
 
 # Visualize target distribution
-sns.distplot(values, fit=norm)
+sns.histplot(values, kde=True, stat="density")  # kde=True sẽ thêm đường Kernel Density Estimate
 plt.show()
 
 # GCN Model for Regression
